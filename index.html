@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="google-site-verification" content="AnnsJamqxfbGYgeLxzGKP1oLCUiBVhmkf4hbS3I_1DY" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="Discover 50 Bollywood films from Sholay (1975) to Dunki (2023) — watch official trailers, see cast, IMDb ratings and find which OTT platform each film is on: Netflix, Prime Video, JioHotstar or ZEE5." />
+    <meta property="og:title" content="Bollywood Discovery" />
+    <meta property="og:description" content="Discover 50 Bollywood films from Sholay (1975) to Dunki (2023) — watch official trailers, see cast, IMDb ratings and find which OTT platform each film is on: Netflix, Prime Video, JioHotstar or ZEE5." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="data:," />
+    <title>Bollywood Discovery — Trailers &amp; Legal Ways to Watch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root{
+        color-scheme: light dark;
+        --bg:#faf5ec; --bg2:#f3ead9; --surface:#fffdf8; --surface2:#f7efdd;
+        --ink:#211a12; --ink2:#5c5142; --line:#e2d5bd;
+        --accent:#b91c1c; --accent-ink:#ffffff; --gold:#a16207; --gold-bg:#fef3c7;
+        --chip:#efe6d2; --chip-ink:#4a3f2e;
+        --star:#d97706;
+        --shadow:0 10px 30px rgba(60,40,5,.14);
+        --radius:14px;
+      }
+      @media (prefers-color-scheme: dark){
+        :root{
+          --bg:#131009; --bg2:#1a160e; --surface:#1f1a12; --surface2:#292219;
+          --ink:#f4ecdc; --ink2:#c4b69c; --line:#3a3222;
+          --accent:#e0342c; --accent-ink:#ffffff; --gold:#e8b33c; --gold-bg:#3a2f10;
+          --chip:#2c2517; --chip-ink:#e6d9bd;
+          --star:#f5b93f;
+          --shadow:0 10px 30px rgba(0,0,0,.5);
+        }
+      }
+      *{box-sizing:border-box}
+      html{scroll-behavior:smooth}
+      body{margin:0;background:var(--bg);color:var(--ink);font-family:"Manrope",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+      button,[role="button"],select,summary,input:not([type="checkbox"],[type="radio"]){min-height:2.25rem}
+      button{font-family:inherit;cursor:pointer}
+      a{color:inherit}
+      .wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+
+      /* ---------- Hero ---------- */
+      .hero{background:var(--bg2);border-bottom:1px solid var(--line);overflow:hidden}
+      .hero-inner{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center;padding:34px 0 30px}
+      .hero h1{font-family:"Bebas Neue",sans-serif;font-weight:400;font-size:clamp(44px,7vw,76px);line-height:.95;letter-spacing:.5px;margin:0 0 10px}
+      .hero h1 .red{color:var(--accent)}
+      .hero .gu{font-size:17px;font-weight:700;color:var(--gold);margin:0 0 8px}
+      .hero p.lede{color:var(--ink2);font-size:16px;line-height:1.55;margin:0 0 18px;max-width:52ch}
+      .searchbar{display:flex;gap:8px;max-width:560px}
+      .searchbar input{flex:1;min-width:0;padding:10px 14px;font-size:16px;border:1.5px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink)}
+      .searchbar input:focus{outline:2px solid var(--gold);outline-offset:1px}
+      .searchbar button{background:var(--accent);color:var(--accent-ink);border:0;border-radius:10px;padding:10px 18px;font-weight:800;font-size:15px}
+      .hero-stats{display:flex;gap:22px;margin-top:18px;flex-wrap:wrap}
+      .hero-stats div b{display:block;font-size:20px}
+      .hero-stats div span{font-size:12.5px;color:var(--ink2);font-weight:600}
+      .hero-poster{position:relative}
+      .hero-poster img{width:100%;height:340px;object-fit:cover;object-position:center 22%;border-radius:var(--radius);box-shadow:var(--shadow);display:block}
+      .hero-poster .tag{position:absolute;left:12px;bottom:12px;background:rgba(15,10,4,.82);color:#ffe9b0;padding:8px 12px;border-radius:8px;font-size:13px;font-weight:700;backdrop-filter:blur(2px)}
+      .hero-poster .tag small{display:block;color:#f4ecdc;font-weight:600;font-size:12px}
+
+      /* ---------- Toolbar ---------- */
+      .toolbar{position:sticky;top:0;z-index:30;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 0}
+      .toolbar-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+      .chip{border:1.5px solid var(--line);background:var(--chip);color:var(--chip-ink);border-radius:999px;padding:7px 14px;font-weight:700;font-size:13.5px;min-height:2.25rem}
+      .chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+      .toolbar select{margin-left:auto;padding:8px 10px;border:1.5px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);font-weight:700;font-size:14px}
+      .count-line{font-size:13.5px;color:var(--ink2);font-weight:600;margin:14px 2px 0}
+
+      /* ---------- Grid ---------- */
+      .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:18px;padding:14px 0 8px}
+      .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;box-shadow:0 2px 8px rgba(60,40,5,.06)}
+      .card .poster{position:relative;aspect-ratio:2/3;background:var(--surface2)}
+      .card .poster img{width:100%;height:100%;object-fit:cover;display:block}
+      .card .rating{position:absolute;top:8px;left:8px;background:rgba(15,10,4,.85);color:#ffd968;font-weight:800;font-size:13px;padding:4px 8px;border-radius:7px}
+      .card .plat{position:absolute;bottom:8px;left:8px;background:rgba(15,10,4,.88);color:#fff;font-weight:700;font-size:11.5px;padding:5px 9px;border-radius:7px;text-decoration:none;display:inline-flex;align-items:center;gap:4px;max-width:calc(100% - 16px)}
+      .card .plat:hover{background:var(--accent)}
+      .updated-line{display:inline-flex;align-items:center;gap:7px;margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:7px 13px;font-size:13px;font-weight:700;color:var(--ink2)}
+      .updated-line b{color:var(--ink)}
+      .updated-dot{width:8px;height:8px;border-radius:50%;background:#16a34a;flex:none}
+      .card .save{position:absolute;top:8px;right:8px;width:38px;height:38px;border-radius:50%;border:0;background:rgba(15,10,4,.7);color:#fff;font-size:17px;line-height:1;display:grid;place-items:center}
+      .card .save.on{background:var(--accent)}
+      .card .body{padding:12px 12px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+      .card h3{margin:0;font-size:16.5px;line-height:1.25}
+      .card .meta{font-size:12.5px;color:var(--ink2);font-weight:600}
+      .card .genres{font-size:12px;color:var(--gold);font-weight:800;letter-spacing:.02em}
+      .card .cast{font-size:12.5px;color:var(--ink2);line-height:1.45;margin:0}
+      .card .actions{margin-top:auto;display:flex;gap:8px;padding-top:8px;flex-wrap:wrap}
+      .btn{flex:1;border-radius:9px;padding:9px 8px;font-weight:800;font-size:13.5px;border:1.5px solid var(--line);background:var(--surface2);color:var(--ink);min-height:2.5rem;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;text-align:center;line-height:1.25}
+      .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+      .btn.watch{flex:1 1 100%;background:var(--ink);border-color:var(--ink);color:var(--bg);font-size:14.5px;padding:11px 10px}
+      .btn.watch:hover{opacity:.92}
+      .empty{display:none;text-align:center;padding:44px 16px;color:var(--ink2)}
+      .empty b{color:var(--ink);font-size:17px}
+
+      /* ---------- How it works ---------- */
+      .how{padding:30px 0 8px}
+      .how h2,.spot h2{font-family:"Bebas Neue",sans-serif;font-weight:400;font-size:32px;letter-spacing:.5px;margin:0 0 4px}
+      .how .sub{color:var(--ink2);margin:0 0 16px;font-size:14.5px}
+      .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+      .step{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px}
+      .step .n{width:30px;height:30px;border-radius:50%;background:var(--gold-bg);color:var(--gold);display:grid;place-items:center;font-weight:800;margin-bottom:8px}
+      .step h3{margin:0 0 5px;font-size:15.5px}
+      .step p{margin:0;color:var(--ink2);font-size:13.5px;line-height:1.55}
+
+      footer{border-top:1px solid var(--line);margin-top:34px;padding:20px 0 34px;color:var(--ink2);font-size:13px;line-height:1.6}
+
+      /* ---------- Modal ---------- */
+      .overlay{position:fixed;inset:0;background:rgba(10,7,3,.72);z-index:60;display:none;align-items:flex-end;justify-content:center;padding:0}
+      .overlay.open{display:flex}
+      .sheet{background:var(--bg);width:100%;max-width:860px;max-height:92vh;overflow:auto;border-radius:18px 18px 0 0;padding:0 0 22px;animation:up .22s ease}
+      @keyframes up{from{transform:translateY(24px);opacity:.6}to{transform:none;opacity:1}}
+      @media (prefers-reduced-motion: reduce){.sheet{animation:none}html{scroll-behavior:auto}}
+      .sheet .video{aspect-ratio:16/9;background:#000}
+      .sheet .video iframe{width:100%;height:100%;border:0;display:block}
+      .ytbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;background:var(--surface2);border-bottom:1px solid var(--line);padding:10px 18px}
+      .ytbar .yt-note{font-size:13.5px;font-weight:600;color:var(--ink2)}
+      .ytbtn{margin-left:auto;display:inline-flex;align-items:center;gap:7px;background:var(--accent);color:#fff;text-decoration:none;font-weight:800;font-size:14px;padding:9px 16px;border-radius:9px;min-height:2.5rem}
+      .ytbtn:active{opacity:.85}
+      .sheet .pad{padding:16px 18px 0}
+      .sheet-head{display:flex;gap:16px}
+      .sheet-head img{width:104px;height:156px;object-fit:cover;border-radius:10px;flex:none;box-shadow:var(--shadow)}
+      .sheet h2{margin:2px 0 4px;font-size:24px;line-height:1.15}
+      .sheet .meta{color:var(--ink2);font-weight:600;font-size:13.5px}
+      .sheet .genres{color:var(--gold);font-weight:800;font-size:12.5px;margin-top:4px}
+      .sheet p.story{line-height:1.65;font-size:15px;margin:14px 0 0}
+      .kv{display:grid;grid-template-columns:repeat(2,1fr);gap:10px 18px;margin-top:14px;font-size:14px}
+      .kv b{display:block;font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink2);margin-bottom:2px}
+      .watchbox{margin-top:18px;background:var(--surface2);border:1px solid var(--line);border-radius:12px;padding:14px}
+      .watchbox h3{margin:0 0 8px;font-size:15px}
+      .watchbox .plats{display:flex;gap:8px;flex-wrap:wrap}
+      .watchbox .pchip{background:var(--surface);border:1.5px solid var(--line);border-radius:9px;padding:9px 14px;font-weight:800;font-size:14px;text-decoration:none;color:var(--ink);display:inline-flex;align-items:center;gap:6px;min-height:2.5rem}
+      .watchbox .pchip:hover{border-color:var(--gold);background:var(--gold-bg)}
+      .watch-main{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;background:var(--accent);color:#fff;text-decoration:none;font-weight:800;font-size:16.5px;padding:13px 16px;border-radius:11px;min-height:3rem;margin-bottom:10px;text-align:center;line-height:1.3}
+      .watch-main:active{opacity:.88}
+      .watchbox p.note{margin:10px 0 0;font-size:12.5px;color:var(--ink2);line-height:1.5}
+      .weekly-box{margin-top:14px;background:var(--gold-bg);border:1px solid var(--line);border-radius:var(--radius);padding:15px 16px}
+      .weekly-box h3{margin:0 0 5px;font-size:15.5px}
+      .weekly-box p{margin:0;color:var(--ink2);font-size:13.5px;line-height:1.6}
+      .sheet .closebar{position:sticky;top:0;display:flex;justify-content:flex-end;padding:10px 12px 0;background:transparent;z-index:2}
+      .xbtn{width:40px;height:40px;border-radius:50%;border:0;background:var(--ink);color:var(--bg);font-size:18px}
+      @media (min-width:640px){.overlay{align-items:center;padding:20px}.sheet{border-radius:18px}}
+      @media (max-width:760px){
+        .hero-inner{grid-template-columns:1fr;padding-top:24px}
+        .hero-poster img{height:230px}
+        .steps{grid-template-columns:1fr}
+        .grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+        .toolbar select{margin-left:0}
+        .sheet-head img{width:84px;height:126px}
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ================= HERO ================= -->
+    <header class="hero">
+      <div class="wrap hero-inner">
+        <div>
+          <p class="gu">તમારી મનપસંદ ફિલ્મ શોધો — ટ્રેલર જુઓ, કાયદેસર જુઓ</p>
+          <h1>Bollywood<br /><span class="red">Discovery</span></h1>
+          <p class="lede">Find a great Hindi film, watch its official trailer right here, then tap <strong>Watch</strong> — it takes you straight to that film on its legal app in India: Netflix, Prime Video, JioHotstar or ZEE5. No pirated copies, no fake download sites.</p>
+          <form class="searchbar" id="searchForm" role="search">
+            <input id="searchInput" type="search" placeholder="Search a movie or star — try “Shah Rukh” or “comedy”" aria-label="Search movies" />
+            <button type="submit">Search</button>
+          </form>
+          <div class="hero-stats">
+            <div><b>50</b><span>hand-picked films</span></div>
+            <div><b>1975–2024</b><span>classics to new hits</span></div>
+            <div><b>100% legal</b><span>official trailers &amp; apps</span></div>
+          </div>
+          <div><span class="updated-line"><span class="updated-dot" aria-hidden="true"></span><span>Catalogue updated <b>Nov 2026</b> · Next check due in <b>7 days</b></span></span></div>
+        </div>
+        <div class="hero-poster">
+          <img src="assets/stree2.jpg" alt="Stree 2 official movie poster" />
+          <div class="tag">Biggest Hindi hit of 2024<small>Stree 2 — watch the trailer below</small></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= TOOLBAR ================= -->
+    <div class="toolbar">
+      <div class="wrap toolbar-row" id="genreRow" role="group" aria-label="Filter by genre"></div>
+    </div>
+
+    <main class="wrap">
+      <p class="count-line" id="countLine"></p>
+      <section class="grid" id="grid" aria-live="polite"></section>
+      <div class="empty" id="emptyState">
+        <b>No film matches that search.</b>
+        <p>Try a star's name (Aamir, Shah Rukh, Kangana), a genre (comedy, thriller), or clear the filters above.</p>
+      </div>
+
+      <!-- ================= HOW LEGAL WATCHING WORKS ================= -->
+      <section class="how">
+        <h2>Watch &amp; Download — The Legal Way</h2>
+        <p class="sub">Full films belong to their studios, so there are no legal free-download websites for them — but the official apps do the same job, safely and in full HD:</p>
+        <div class="steps">
+          <div class="step"><div class="n">1</div><h3>Tap Watch — go straight to the film</h3><p>Every card has a big <strong>“▶ Watch on Netflix / Prime Video / JioHotstar / ZEE5”</strong> button. Tap it and that film opens on its platform — in the app if you have it, or on the platform's website. The platform name on the poster and in Details works as a link too. JioHotstar buttons open the film's own page on JioHotstar — not a search page — so the app opens it without the “Something went wrong” error.</p></div>
+          <div class="step"><div class="n">2</div><h3>Watch the trailer here first</h3><p>Tap “Trailer” on any film — the official YouTube trailer plays inside this page, free, no sign-up. If the player stays blank, tap “Watch on YouTube” under it to open the same trailer in YouTube.</p></div>
+          <div class="step"><div class="n">3</div><h3>Download inside the official app</h3><p>Once the film opens on its platform, subscribers can use that app's own Download button — save the film on your phone and watch offline, in full HD, with subtitles.</p></div>
+        </div>
+        <div class="weekly-box">
+          <h3>How new films get added</h3>
+          <p>New Bollywood films that land on OTT are checked and added in a <strong>weekly update</strong>. A film appears here after that weekly check — not automatically on its release day. Catalogue updated Nov 2026 · Next check due in 7 days.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        Ratings shown are IMDb ratings. Streaming platforms are for India and were checked in November 2026 — apps change their catalogues, so confirm inside the app before subscribing. Trailers are the official YouTube trailers from the films' studios. This site hosts no films and offers no downloads; its Watch buttons open each film on the official platform. <strong>Catalogue updated Nov 2026 · Next check due in 7 days</strong> — new OTT releases are added in the weekly check, not automatically on release day.
+      </div>
+    </footer>
+
+    <!-- ================= DETAIL SHEET ================= -->
+    <div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-label="Movie details">
+      <div class="sheet">
+        <div class="closebar"><button class="xbtn" id="closeBtn" aria-label="Close details">✕</button></div>
+        <div class="video" id="videoBox"></div>
+        <div class="ytbar">
+          <span class="yt-note">Trailer stays blank or won't play here?</span>
+          <a class="ytbtn" id="ytLink" href="https://www.youtube.com/" target="_blank" rel="noopener">▶ Watch on YouTube</a>
+        </div>
+        <div class="pad">
+          <div class="sheet-head">
+            <img id="dPoster" src="assets/dangal.jpg" alt="Movie poster" />
+            <div>
+              <h2 id="dTitle"></h2>
+              <div class="meta" id="dMeta"></div>
+              <div class="genres" id="dGenres"></div>
+              <div class="meta" id="dRating" style="margin-top:6px"></div>
+            </div>
+          </div>
+          <p class="story" id="dStory"></p>
+          <div class="kv">
+            <div><b>Director</b><span id="dDirector"></span></div>
+            <div><b>Language</b><span>Hindi (subtitles on the apps)</span></div>
+            <div><b>Cast</b><span id="dCast"></span></div>
+            <div><b>Why watch</b><span id="dWhy"></span></div>
+          </div>
+          <div class="watchbox">
+            <h3>Watch it legally in India on</h3>
+            <a class="watch-main" id="dWatchMain" href="https://www.netflix.com/" target="_blank" rel="noopener">▶ Watch now</a>
+            <div class="plats" id="dPlats"></div>
+            <p class="note">Tap the button or a platform name above — it opens this film on that platform (app or website). Subscribers can also use the app's Download button there to watch offline. Availability can change when licences move between apps.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var MOVIES = [
+        { id:"stree2", title:"Stree 2", year:2024, runtime:"2h 23m", rating:"6.9", genres:["Horror","Comedy"], poster:"assets/stree2.jpg",
+          director:"Amar Kaushik", cast:"Rajkummar Rao, Shraddha Kapoor, Pankaj Tripathi, Abhishek Banerjee",
+          story:"Chanderi is haunted again — this time by Sarkata, a headless terror who is taking the town's women. Vicky and his friends must team up with the mysterious woman from the first film to stop him.",
+          why:"2024's biggest Hindi blockbuster — scares and laughs in equal measure.", plats:["Prime Video"], yt:"KVnheXywIbY" },
+        { id:"12thfail", title:"12th Fail", year:2023, runtime:"2h 27m", rating:"8.7", genres:["Drama"], poster:"assets/12thfail.jpg",
+          director:"Vidhu Vinod Chopra", cast:"Vikrant Massey, Medha Shankr, Anant V Joshi",
+          story:"Based on a true story: Manoj, a young man from Chambal who failed his 12th standard, restarts from zero and fights poverty and a brutal system to crack the UPSC — India's toughest exam.",
+          why:"The word-of-mouth hit of 2023. If you are studying or struggling, this one will push you.", plats:["JioHotstar"], yt:"KjbtuqENvVE" },
+        { id:"jawan", title:"Jawan", year:2023, runtime:"2h 49m", rating:"6.9", genres:["Action","Thriller"], poster:"assets/jawan.webp",
+          director:"Atlee", cast:"Shah Rukh Khan, Nayanthara, Vijay Sethupathi, Deepika Padukone",
+          story:"A jailer and his team of women inmates hijack a Mumbai metro to expose corruption — while a ruthless arms dealer and the jailer's own past close in on him.",
+          why:"Shah Rukh Khan in a double role, Atlee's mass style, Anirudh's music. Pure big-screen energy.", plats:["Netflix"], yt:"COv52Qyctws" },
+        { id:"pathaan", title:"Pathaan", year:2023, runtime:"2h 26m", rating:"5.9", genres:["Action","Thriller"], poster:"assets/pathaan.webp",
+          director:"Siddharth Anand", cast:"Shah Rukh Khan, Deepika Padukone, John Abraham",
+          story:"Exiled RAW agent Pathaan is called back to stop Jim, a former agent turned mercenary, from unleashing a deadly attack on India.",
+          why:"The film that revived Bollywood's box office in 2023 — globetrotting spy action from the YRF Spy Universe.", plats:["Prime Video"], yt:"vqu4z34wENw" },
+        { id:"laapataa", title:"Laapataa Ladies", year:2024, runtime:"2h 2m", rating:"8.4", genres:["Comedy","Drama"], poster:"assets/laapataa.jpg",
+          director:"Kiran Rao", cast:"Nitanshi Goel, Pratibha Ranta, Sparsh Shrivastava, Ravi Kishan",
+          story:"Two new brides, faces covered by veils, get swapped on a crowded train in rural India. One groom searches for his lost wife while both women quietly discover what they actually want from life.",
+          why:"India's official entry to the Oscars — gentle, funny and quietly powerful.", plats:["Netflix"], yt:"tF1JN2pT_sM" },
+        { id:"andhadhun", title:"Andhadhun", year:2018, runtime:"2h 19m", rating:"8.2", genres:["Thriller","Comedy"], poster:"assets/andhadhun.webp",
+          director:"Sriram Raghavan", cast:"Ayushmann Khurrana, Tabu, Radhika Apte",
+          story:"Akash, a pianist pretending to be blind, accidentally 'sees' a murder. Now the killer knows his secret — or does she? Every scene turns the story on its head.",
+          why:"One of the smartest Hindi thrillers ever made. Do not let anyone spoil the ending.", plats:["Netflix"], yt:"2iVYI99VGaw" },
+        { id:"dangal", title:"Dangal", year:2016, runtime:"2h 41m", rating:"8.3", genres:["Drama","Sport"], poster:"assets/dangal.jpg",
+          director:"Nitesh Tiwari", cast:"Aamir Khan, Fatima Sana Shaikh, Sanya Malhotra, Sakshi Tanwar",
+          story:"Former wrestler Mahavir Singh Phogat trains his daughters Geeta and Babita against every odd society throws at them — all the way to Commonwealth Games gold.",
+          why:"India's highest-grossing film worldwide for years. A father's fight, a daughters' triumph.", plats:["Netflix"], yt:"x_7YlGv9u1g" },
+        { id:"queen", title:"Queen", year:2014, runtime:"2h 26m", rating:"8.1", genres:["Comedy","Drama"], poster:"assets/queen.jpg",
+          director:"Vikas Bahl", cast:"Kangana Ranaut, Rajkummar Rao, Lisa Haydon",
+          story:"Dumped by her fiancé two days before the wedding, shy Delhi girl Rani goes on her honeymoon alone — to Paris and Amsterdam — and finds herself on the way.",
+          why:"The film that made Kangana a superstar. Joyful, honest and endlessly rewatchable.", plats:["Netflix"], yt:"M_HP8xgXhBU" },
+        { id:"znmd", title:"Zindagi Na Milegi Dobara", year:2011, runtime:"2h 35m", rating:"8.2", genres:["Drama","Comedy"], poster:"assets/znmd.jpg",
+          director:"Zoya Akhtar", cast:"Hrithik Roshan, Farhan Akhtar, Abhay Deol, Katrina Kaif",
+          story:"Three school friends reunite for a bachelor road trip across Spain — deep-sea diving, skydiving and the running of the bulls — and each must face the fear he has been avoiding.",
+          why:"Bollywood's most loved friendship film. Spain has never looked better.", plats:["Netflix","Prime Video"], yt:"FJrpcDgC3zU" },
+        { id:"3idiots", title:"3 Idiots", year:2009, runtime:"2h 50m", rating:"8.4", genres:["Comedy","Drama"], poster:"assets/3idiots.jpg",
+          director:"Rajkumar Hirani", cast:"Aamir Khan, R. Madhavan, Sharman Joshi, Kareena Kapoor, Boman Irani",
+          story:"Two friends travel across India searching for Rancho, their genius college roommate who challenged the education system — and disappeared after graduation.",
+          why:"The most quoted Hindi film of its generation. 'All is well' — funny and moving in every scene.", plats:["Prime Video"], yt:"K0eDlFX9GMc" },
+        { id:"ddlj", title:"Dilwale Dulhania Le Jayenge", year:1995, runtime:"3h 10m", rating:"8.0", genres:["Romance","Classic"], poster:"assets/ddlj.jpg",
+          director:"Aditya Chopra", cast:"Shah Rukh Khan, Kajol, Amrish Puri, Farida Jalal",
+          story:"Raj and Simran meet on a European holiday and fall in love — but Simran's father has promised her hand to another man in Punjab. Raj follows her to India to win the family over, not run away.",
+          why:"The longest-running film in Indian cinema history, still playing in Mumbai. The romance every generation compares others to.", plats:["Prime Video","Netflix"], yt:"c25GKl5VNeY" },
+        { id:"sholay", title:"Sholay", year:1975, runtime:"3h 24m", rating:"8.1", genres:["Action","Classic","Drama"], poster:"assets/sholay.jpg",
+          director:"Ramesh Sippy", cast:"Amitabh Bachchan, Dharmendra, Hema Malini, Sanjeev Kumar, Amjad Khan",
+          story:"Two small-time crooks, Jai and Veeru, are hired by retired police officer Thakur Baldev Singh to capture the ruthless dacoit Gabbar Singh, who terrorises the village of Ramgarh.",
+          why:"The most iconic Hindi film ever made — its dialogues, songs and Gabbar Singh are part of Indian pop culture itself.", plats:["Prime Video"], yt:"qbdX6vFbXPw" },
+        { id:"lagaan", title:"Lagaan", year:2001, runtime:"3h 44m", rating:"8.1", genres:["Drama","Sport","Classic"], poster:"assets/lagaan.jpg",
+          director:"Ashutosh Gowariker", cast:"Aamir Khan, Gracy Singh, Rachel Shelley, Paul Blackthorne",
+          story:"In drought-hit 1893 India, villagers accept a British officer's wager: beat his team at cricket and their land tax (lagaan) is cancelled — lose, and it triples.",
+          why:"Oscar-nominated epic that turned a cricket match into a nation's pride. A landmark of Indian cinema.", plats:["Netflix"], yt:"hTt5FbgziPw" },
+        { id:"dilchahta", title:"Dil Chahta Hai", year:2001, runtime:"3h 3m", rating:"8.1", genres:["Comedy","Drama","Romance"], poster:"assets/dilchahta.jpg",
+          director:"Farhan Akhtar", cast:"Aamir Khan, Saif Ali Khan, Akshaye Khanna, Preity Zinta",
+          story:"Three inseparable friends in Mumbai drift apart as each falls in love in a completely different way — and must find their way back to each other.",
+          why:"The film that made Bollywood young and modern. Goa trips have never been the same since.", plats:["Netflix"], yt:"m13b25V0B10" },
+        { id:"k3g", title:"Kabhi Khushi Kabhie Gham...", year:2001, runtime:"3h 30m", rating:"7.4", genres:["Drama","Romance"], poster:"assets/k3g.jpg",
+          director:"Karan Johar", cast:"Amitabh Bachchan, Shah Rukh Khan, Kajol, Hrithik Roshan, Kareena Kapoor",
+          story:"When the adopted elder son of the wealthy Raichand family marries against his father's wishes, he is disowned — and years later his younger brother sets out to reunite the family.",
+          why:"Karan Johar's grand family saga — 'It's all about loving your parents' — with an unmatched star cast.", plats:["Netflix","Prime Video"], yt:"7uY1JbWZKPA" },
+        { id:"munnabhai", title:"Munna Bhai M.B.B.S.", year:2003, runtime:"2h 36m", rating:"8.1", genres:["Comedy","Drama"], poster:"assets/munnabhai.webp",
+          director:"Rajkumar Hirani", cast:"Sanjay Dutt, Arshad Warsi, Boman Irani, Jimmy Shergill",
+          story:"Mumbai don Munna, desperate to prove to his parents that he is a doctor, fakes his way into medical college — and starts healing patients with hugs and heart instead of medicine.",
+          why:"Gave India 'Jaadu ki Jhappi' and Circuit. Rajkumar Hirani's debut is comedy with a huge heart.", plats:["Prime Video"], yt:"6lCGvu-hwX4" },
+        { id:"kalhonaaho", title:"Kal Ho Naa Ho", year:2003, runtime:"3h 6m", rating:"7.9", genres:["Comedy","Drama","Romance"], poster:"assets/kalhonaaho.webp",
+          director:"Nikkhil Advani", cast:"Shah Rukh Khan, Preity Zinta, Saif Ali Khan, Jaya Bachchan",
+          story:"In New York, cheerful Aman transforms the life of serious, struggling Naina and her family — while hiding a secret about his own heart that changes everything.",
+          why:"Shah Rukh Khan at his most charming in a love story that still makes audiences cry. Iconic title song by Sonu Nigam.", plats:["Netflix","Prime Video"], yt:"tVMAQAsjsOU" },
+        { id:"swades", title:"Swades", year:2004, runtime:"3h 30m", rating:"8.2", genres:["Drama"], poster:"assets/swades.jpg",
+          director:"Ashutosh Gowariker", cast:"Shah Rukh Khan, Gayatri Joshi, Kishori Ballal",
+          story:"NASA scientist Mohan Bhargava returns to India to find his childhood nanny, and a small village's struggles with water, power and caste slowly change what 'home' means to him.",
+          why:"Widely called Shah Rukh Khan's finest performance — a quiet, honest film about coming back to your roots.", plats:["Netflix"], yt:"vc7AZNWvs0M" },
+        { id:"veerzaara", title:"Veer-Zaara", year:2004, runtime:"3h 12m", rating:"7.8", genres:["Drama","Romance"], poster:"assets/veerzaara.jpg",
+          director:"Yash Chopra", cast:"Shah Rukh Khan, Preity Zinta, Rani Mukerji, Amitabh Bachchan",
+          story:"Indian Air Force officer Veer falls for Pakistani girl Zaara, and a misunderstanding lands him in a Pakistani prison for 22 years — until a young lawyer takes up his case.",
+          why:"Yash Chopra's cross-border love story with Madan Mohan's timeless music. Romance at its most grand and gentle.", plats:["Prime Video"], yt:"OSaVImLnnsw" },
+        { id:"black", title:"Black", year:2005, runtime:"2h 2m", rating:"8.2", genres:["Drama"], poster:"assets/black.jpg",
+          director:"Sanjay Leela Bhansali", cast:"Amitabh Bachchan, Rani Mukerji, Ayesha Kapur",
+          story:"Michelle, a deaf and blind girl, learns to communicate and graduate through her eccentric teacher Debraj — who later begins losing his own memory to Alzheimer's.",
+          why:"Rani Mukerji and Amitabh Bachchan in career-defining performances. Won the National Award for Best Hindi Film.", plats:["Prime Video"], yt:"ZfNPV6NObVI" },
+        { id:"rangdebasanti", title:"Rang De Basanti", year:2006, runtime:"2h 37m", rating:"8.1", genres:["Drama","Thriller"], poster:"assets/rangdebasanti.webp",
+          director:"Rakeysh Omprakash Mehra", cast:"Aamir Khan, Siddharth, Sharman Joshi, Kunal Kapoor, Soha Ali Khan",
+          story:"A British filmmaker casts carefree Delhi students as freedom fighters in her documentary — and acting out the revolution slowly awakens the rebels in them.",
+          why:"The film that woke up a generation of young Indians. A.R. Rahman's soundtrack became an anthem.", plats:["Netflix"], yt:"QHhnhqxB4E8" },
+        { id:"chakde", title:"Chak De! India", year:2007, runtime:"2h 29m", rating:"8.1", genres:["Drama","Sport"], poster:"assets/chakde.jpg",
+          director:"Shimit Amin", cast:"Shah Rukh Khan, Vidya Malvade, Sagarika Ghatge, Chitrashi Rawat",
+          story:"Disgraced hockey captain Kabir Khan returns as coach of the Indian women's team — a divided squad from different states that must become one team to win the World Cup.",
+          why:"India's greatest sports film. 'Sattar minute' is still quoted before every big match.", plats:["Prime Video"], yt:"6a0-dSMWm5g" },
+        { id:"jabwemet", title:"Jab We Met", year:2007, runtime:"2h 22m", rating:"7.9", genres:["Comedy","Romance","Drama"], poster:"assets/jabwemet.jpg",
+          director:"Imtiaz Ali", cast:"Shahid Kapoor, Kareena Kapoor, Tarun Arora",
+          story:"Depressed businessman Aditya meets unstoppably cheerful Geet on a train. She drags him into her runaway plan — and turns his life upside down in the process.",
+          why:"Geet became one of Bollywood's most loved characters. The rom-com every rom-com since is measured against.", plats:["Netflix","Prime Video"], yt:"BFzT-hQDreM" },
+        { id:"taarezameen", title:"Taare Zameen Par", year:2007, runtime:"2h 44m", rating:"8.3", genres:["Drama"], poster:"assets/taarezameen.jpg",
+          director:"Aamir Khan", cast:"Darsheel Safary, Aamir Khan, Tisca Chopra",
+          story:"Eight-year-old Ishaan, branded lazy and stupid for failing at school, is sent to boarding school — until art teacher Ram Shankar Nikumbh recognises his dyslexia and his gift.",
+          why:"Changed how India talks about children and learning. Keep tissues ready for 'Maa'.", plats:["Netflix"], yt:"0g_R4-jbVx8" },
+        { id:"wakeupsid", title:"Wake Up Sid", year:2009, runtime:"2h 18m", rating:"7.6", genres:["Comedy","Drama","Romance"], poster:"assets/wakeupsid.jpg",
+          director:"Ayan Mukerji", cast:"Ranbir Kapoor, Konkona Sen Sharma, Anupam Kher",
+          story:"Spoilt, aimless Sid is thrown out of his rich father's house after failing his exams, and must learn to earn, cook and grow up — helped by writer Aisha, new to Mumbai.",
+          why:"The definitive coming-of-age film for urban India — gentle, funny and full of Mumbai monsoon warmth.", plats:["Netflix"], yt:"Ngimy3GpHS0" },
+        { id:"mynameiskhan", title:"My Name Is Khan", year:2010, runtime:"2h 45m", rating:"7.9", genres:["Drama","Romance"], poster:"assets/mynameiskhan.jpg",
+          director:"Karan Johar", cast:"Shah Rukh Khan, Kajol, Jimmy Shergill",
+          story:"Rizwan Khan, a Muslim man with Asperger's syndrome, sets out across post-9/11 America to meet the President and deliver one message: 'My name is Khan, and I am not a terrorist.'",
+          why:"Shah Rukh Khan and Kajol's most serious pairing — a film about prejudice that travelled the world.", plats:["Prime Video"], yt:"nqxgYT3TYzY" },
+        { id:"barfi", title:"Barfi!", year:2012, runtime:"2h 31m", rating:"8.1", genres:["Comedy","Drama","Romance"], poster:"assets/barfi.jpg",
+          director:"Anurag Basu", cast:"Ranbir Kapoor, Priyanka Chopra, Ileana D'Cruz",
+          story:"In 1970s Darjeeling, deaf-mute prankster Barfi falls for Shruti, loses her, and finds an unexpected bond with Jhilmil, an autistic girl — told almost without dialogue.",
+          why:"India's entry to the Oscars that year. Ranbir and Priyanka communicate more in silence than most films do in words.", plats:["Netflix"], yt:"fDpjzEKJjsM" },
+        { id:"kahaani", title:"Kahaani", year:2012, runtime:"2h 2m", rating:"8.1", genres:["Thriller","Drama"], poster:"assets/kahaani.jpg",
+          director:"Sujoy Ghosh", cast:"Vidya Balan, Parambrata Chatterjee, Nawazuddin Siddiqui",
+          story:"Pregnant Vidya Bagchi arrives in Kolkata searching for her missing husband, but every record denies he ever existed — and someone wants her to stop asking questions.",
+          why:"The thriller that proved a female-led film could rule the box office. That climax, during Durga Puja, is legendary.", plats:["Netflix"], yt:"rsjamVgPoI8" },
+        { id:"englishvinglish", title:"English Vinglish", year:2012, runtime:"2h 14m", rating:"7.8", genres:["Comedy","Drama"], poster:"assets/englishvinglish.jpg",
+          director:"Gauri Shinde", cast:"Sridevi, Adil Hussain, Mehdi Nebbou, Priya Anand",
+          story:"Homemaker Shashi, mocked by her family for her broken English, secretly joins an English course in New York while there for a family wedding — and wins back her self-respect.",
+          why:"Sridevi's beloved comeback after 15 years. Every Indian mother saw herself in Shashi.", plats:["Prime Video"], yt:"wmGVY4T88dc" },
+        { id:"yjhd", title:"Yeh Jawaani Hai Deewani", year:2013, runtime:"2h 40m", rating:"7.2", genres:["Comedy","Drama","Romance"], poster:"assets/yjhd.webp",
+          director:"Ayan Mukerji", cast:"Ranbir Kapoor, Deepika Padukone, Kalki Koechlin, Aditya Roy Kapur",
+          story:"Bookish Naina joins a Manali trek with wanderer Bunny and his friends, falls for him, and meets him again eight years later — when their dreams pull in opposite directions.",
+          why:"The friendship-and-travel film a whole generation grew up quoting. Pritam's soundtrack is all hits.", plats:["Netflix"], yt:"Rbp2XUSeUNE" },
+        { id:"pk", title:"PK", year:2014, runtime:"2h 33m", rating:"8.1", genres:["Comedy","Drama"], poster:"assets/pk.jpg",
+          director:"Rajkumar Hirani", cast:"Aamir Khan, Anushka Sharma, Sushant Singh Rajput, Boman Irani",
+          story:"An innocent alien stranded on Earth loses his remote and, searching for it, starts asking the questions about God and religion that no human dares to ask.",
+          why:"For years India's highest-grossing film ever. Satire that made the whole country laugh — and think.", plats:["Netflix"], yt:"XMDDbFUjDZ0" },
+        { id:"bajrangi", title:"Bajrangi Bhaijaan", year:2015, runtime:"2h 43m", rating:"8.0", genres:["Action","Comedy","Drama"], poster:"assets/bajrangi.webp",
+          director:"Kabir Khan", cast:"Salman Khan, Harshaali Malhotra, Kareena Kapoor, Nawazuddin Siddiqui",
+          story:"Kind-hearted Hanuman devotee Pawan finds mute six-year-old Shahida, lost in India, and vows to walk her home to her village in Pakistan — without a passport.",
+          why:"Salman Khan's most loved film — a cross-border story with a heart bigger than the border itself.", plats:["Netflix"], yt:"4nwAra0mz_Q" },
+        { id:"piku", title:"Piku", year:2015, runtime:"2h 3m", rating:"7.6", genres:["Comedy","Drama"], poster:"assets/piku.jpg",
+          director:"Shoojit Sircar", cast:"Deepika Padukone, Amitabh Bachchan, Irrfan Khan",
+          story:"Architect Piku's life revolves around her hypochondriac 70-year-old father and his constipation — until a road trip to Kolkata with cab-company owner Rana changes all three of them.",
+          why:"A film about motions and emotions, held together by three perfect performances — Irrfan at his most effortless.", plats:["Prime Video"], yt:"oeiKUlUUNQ8" },
+        { id:"pink", title:"Pink", year:2016, runtime:"2h 16m", rating:"8.1", genres:["Drama","Thriller"], poster:"assets/pink.webp",
+          director:"Aniruddha Roy Chowdhury", cast:"Amitabh Bachchan, Taapsee Pannu, Kirti Kulhari, Andrea Tariang",
+          story:"After a night that goes wrong, three Delhi women face a false case and a society ready to judge them — until retired lawyer Deepak Sehgal takes their side in court.",
+          why:"'No means no' entered the national conversation through this courtroom drama. Amitabh's closing argument is iconic.", plats:["Netflix"], yt:"AL2TShb6fFs" },
+        { id:"sultan", title:"Sultan", year:2016, runtime:"2h 50m", rating:"7.0", genres:["Action","Drama","Sport"], poster:"assets/sultan.jpg",
+          director:"Ali Abbas Zafar", cast:"Salman Khan, Anushka Sharma, Randeep Hooda",
+          story:"Haryana wrestler Sultan Ali Khan gives up the sport after personal tragedy, then fights his way back years later through mixed martial arts to win back his pride and his love.",
+          why:"Salman Khan's most physical performance, with real wrestling grit and Anushka matching him move for move.", plats:["Prime Video"], yt:"wPxqcq6Byq0" },
+        { id:"hindimedium", title:"Hindi Medium", year:2017, runtime:"2h 12m", rating:"7.8", genres:["Comedy","Drama"], poster:"assets/hindimedium.jpg",
+          director:"Saket Chaudhary", cast:"Irrfan Khan, Saba Qamar, Deepak Dobriyal",
+          story:"Rich Delhi couple Raj and Mita will do anything to get their daughter into a top English-medium school — even pretend to be poor to claim a quota seat.",
+          why:"Irrfan's comic timing skewers India's English obsession and school-admission madness. A sequel, Angrezi Medium, followed.", plats:["Prime Video"], yt:"GjkFr48jk68" },
+        { id:"secretsuperstar", title:"Secret Superstar", year:2017, runtime:"2h 30m", rating:"7.8", genres:["Drama"], poster:"assets/secretsuperstar.webp",
+          director:"Advait Chandan", cast:"Zaira Wasim, Aamir Khan, Meher Vij",
+          story:"Vadodara teenager Insia, forbidden by her strict father to sing, uploads songs wearing a burqa — and becomes an internet sensation as the anonymous 'Secret Superstar'.",
+          why:"A small film with a giant heart about a mother's quiet courage and a daughter's voice.", plats:["Netflix"], yt:"J_yb8HORges" },
+        { id:"raazi", title:"Raazi", year:2018, runtime:"2h 18m", rating:"7.7", genres:["Drama","Thriller"], poster:"assets/raazi.jpg",
+          director:"Meghna Gulzar", cast:"Alia Bhatt, Vicky Kaushal, Jaideep Ahlawat",
+          story:"In 1971, shy Kashmiri student Sehmat agrees to marry into a Pakistani army family — to spy for India. Every day in her new home is a risk of being caught.",
+          why:"Based on the true story from 'Calling Sehmat'. Alia Bhatt's finest performance in a spy film with no guns, only nerve.", plats:["Prime Video"], yt:"nDbjJVmGV98" },
+        { id:"stree", title:"Stree", year:2018, runtime:"2h 8m", rating:"7.5", genres:["Horror","Comedy"], poster:"assets/stree.jpg",
+          director:"Amar Kaushik", cast:"Rajkummar Rao, Shraddha Kapoor, Pankaj Tripathi, Aparshakti Khurana",
+          story:"In Chanderi, men fear the festival nights when 'Stree', a female spirit, calls their name and takes them away — leaving only their clothes behind.",
+          why:"The film that started Maddock's horror-comedy universe and led to Stree 2. Scary, funny and quietly feminist.", plats:["JioHotstar"], yt:"gzeaGcLLl_A" },
+        { id:"badhaaiho", title:"Badhaai Ho", year:2018, runtime:"2h 4m", rating:"7.9", genres:["Comedy","Drama"], poster:"assets/badhaaiho.webp",
+          director:"Amit Ravindernath Sharma", cast:"Ayushmann Khurrana, Neena Gupta, Gajraj Rao, Sanya Malhotra",
+          story:"Twenty-five-year-old Nakul is mortified when his middle-aged mother becomes pregnant — and his whole Delhi neighbourhood finds out before he can accept it.",
+          why:"Neena Gupta and Gajraj Rao steal the show in a comedy that treats middle-aged love with total warmth.", plats:["JioHotstar"], yt:"unAljCZMQYw" },
+        { id:"uri", title:"Uri: The Surgical Strike", year:2019, runtime:"2h 18m", rating:"8.2", genres:["Action","Drama","Thriller"], poster:"assets/uri.jpg",
+          director:"Aditya Dhar", cast:"Vicky Kaushal, Paresh Rawal, Yami Gautam, Mohit Raina",
+          story:"After the 2016 Uri attack killed 19 Indian soldiers, Major Vihaan Singh Shergill leads the Indian Army's retaliatory surgical strike across the Line of Control.",
+          why:"'How's the josh?' became a national catchphrase. Won Vicky Kaushal the National Award for Best Actor.", plats:["ZEE5"], yt:"Cg8sbRFS3zU" },
+        { id:"gullyboy", title:"Gully Boy", year:2019, runtime:"2h 33m", rating:"7.9", genres:["Drama","Romance"], poster:"assets/gullyboy.jpg",
+          director:"Zoya Akhtar", cast:"Ranveer Singh, Alia Bhatt, Siddhant Chaturvedi",
+          story:"Murad, a driver’s son from Dharavi, channels his anger and poetry into rap — fighting class, family and self-doubt to earn his place in Mumbai's underground hip-hop scene.",
+          why:"Inspired by rappers Naezy and Divine. 'Apna Time Aayega' became the anthem of every underdog in India.", plats:["Prime Video"], yt:"JfbxcD6biOk" },
+        { id:"war", title:"War", year:2019, runtime:"2h 34m", rating:"6.5", genres:["Action","Thriller"], poster:"assets/war.jpg",
+          director:"Siddharth Anand", cast:"Hrithik Roshan, Tiger Shroff, Vaani Kapoor",
+          story:"Agent Khalid is sent to hunt down his own mentor, Kabir, who appears to have gone rogue — but nothing about Kabir's betrayal is what it seems.",
+          why:"Hrithik vs Tiger — the biggest action face-off of its time, and a key chapter of the YRF Spy Universe.", plats:["Prime Video"], yt:"tQ0mzXRk-oM" },
+        { id:"shershaah", title:"Shershaah", year:2021, runtime:"2h 15m", rating:"8.3", genres:["Action","Drama","Thriller"], poster:"assets/shershaah.jpg",
+          director:"Vishnuvardhan", cast:"Sidharth Malhotra, Kiara Advani",
+          story:"The true story of Captain Vikram Batra, Param Vir Chakra awardee, whose courage and sacrifice during the 1999 Kargil War made 'Yeh Dil Maange More' immortal.",
+          why:"Released straight to streaming and became a phenomenon — one of India's most loved war films, made with the Batra family's blessing.", plats:["Prime Video"], yt:"Q0FTXnefVBA" },
+        { id:"gangubai", title:"Gangubai Kathiawadi", year:2022, runtime:"2h 32m", rating:"7.8", genres:["Drama"], poster:"assets/gangubai.jpg",
+          director:"Sanjay Leela Bhansali", cast:"Alia Bhatt, Shantanu Maheshwari, Vijay Raaz, Ajay Devgn",
+          story:"Sold into a Kamathipura brothel as a teenager, Ganga rises to become Gangubai — a powerful voice fighting for the rights and dignity of sex workers in 1960s Mumbai.",
+          why:"Based on a chapter of 'Mafia Queens of Mumbai'. Alia Bhatt won the National Award for this performance.", plats:["Netflix"], yt:"N1ZwRv3vJJY" },
+        { id:"drishyam2", title:"Drishyam 2", year:2022, runtime:"2h 20m", rating:"8.2", genres:["Thriller","Drama"], poster:"assets/drishyam2.jpg",
+          director:"Abhishek Pathak", cast:"Ajay Devgn, Tabu, Akshaye Khanna, Shriya Saran",
+          story:"Seven years after he buried a secret to protect his family, Vijay Salgaonkar faces a reopened investigation, a new police chief, and a witness who could destroy everything.",
+          why:"A sequel that matches the original's mind games — the last 30 minutes are pure edge-of-seat plotting.", plats:["Prime Video"], yt:"cxA2y9Tgl7o" },
+        { id:"bhoolbhulaiyaa2", title:"Bhool Bhulaiyaa 2", year:2022, runtime:"2h 23m", rating:"5.9", genres:["Horror","Comedy"], poster:"assets/bhoolbhulaiyaa2.webp",
+          director:"Anees Bazmee", cast:"Kartik Aaryan, Kiara Advani, Tabu",
+          story:"Strangers Ruhaan and Reet fake a death to escape a forced marriage and hide in a haveli haunted by Manjulika — and 'Rooh Baba' must face the spirit himself.",
+          why:"A post-pandemic theatrical blockbuster. Tabu's double act and Kartik's comic energy carry the scares and laughs.", plats:["Netflix"], yt:"P2KRKxAb2ek" },
+        { id:"rockyaurrani", title:"Rocky Aur Rani Kii Prem Kahaani", year:2023, runtime:"2h 48m", rating:"6.5", genres:["Comedy","Drama","Romance"], poster:"assets/rockyaurrani.jpg",
+          director:"Karan Johar", cast:"Ranveer Singh, Alia Bhatt, Dharmendra, Jaya Bachchan, Shabana Azmi",
+          story:"Flamboyant Punjabi Rocky and sharp Bengali journalist Rani fall in love, then swap homes for three months to win over each other's very different families before marrying.",
+          why:"Karan Johar's return to big, musical family romance — with a message about respect inside relationships.", plats:["Prime Video"], yt:"tKlXJUoBW40" },
+        { id:"animal", title:"Animal", year:2023, runtime:"3h 21m", rating:"6.1", genres:["Action","Drama","Thriller"], poster:"assets/animal.jpg",
+          director:"Sandeep Reddy Vanga", cast:"Ranbir Kapoor, Anil Kapoor, Bobby Deol, Rashmika Mandanna",
+          story:"Ranvijay, starved of affection from his steel-magnate father all his life, turns brutally violent when an assassination attempt is made on the man whose approval he craves.",
+          why:"One of 2023's biggest and most debated hits — Ranbir Kapoor's feral performance and Bobby Deol's silent menace.", plats:["Netflix"], yt:"8FkLRUJj-o0" },
+        { id:"dunki", title:"Dunki", year:2023, runtime:"2h 41m", rating:"6.5", genres:["Comedy","Drama"], poster:"assets/dunki.jpg",
+          director:"Rajkumar Hirani", cast:"Shah Rukh Khan, Taapsee Pannu, Vicky Kaushal, Boman Irani",
+          story:"Four friends from a Punjab village dream of reaching England without visas or money, and soldier Hardy joins their dangerous 'donkey flight' journey — and their lives.",
+          why:"Shah Rukh Khan's first film with Rajkumar Hirani — a funny, emotional take on illegal immigration and home.", plats:["Netflix"], yt:"Zd69FfhBmSc" }
+      ];
+
+      var GENRES = ["All","Action","Comedy","Drama","Horror","Romance","Thriller","Classic","Sport"];
+      var state = { genre:"All", query:"", sort:"rating", savedOnly:false, saved:{} };
+
+      var grid = document.getElementById("grid");
+      var emptyState = document.getElementById("emptyState");
+      var countLine = document.getElementById("countLine");
+      var genreRow = document.getElementById("genreRow");
+
+      // Build genre chips + sort
+      GENRES.forEach(function(g){
+        var b = document.createElement("button");
+        b.className = "chip"; b.textContent = g; b.setAttribute("aria-pressed", g==="All" ? "true":"false");
+        b.addEventListener("click", function(){ state.genre = g; syncChips(); render(); });
+        b.dataset.genre = g; genreRow.appendChild(b);
+      });
+      var savedChip = document.createElement("button");
+      savedChip.className = "chip"; savedChip.id = "savedChip"; savedChip.setAttribute("aria-pressed","false");
+      savedChip.textContent = "♥ My List (0)";
+      savedChip.addEventListener("click", function(){ state.savedOnly = !state.savedOnly; savedChip.setAttribute("aria-pressed", state.savedOnly?"true":"false"); render(); });
+      genreRow.appendChild(savedChip);
+      var sel = document.createElement("select");
+      sel.setAttribute("aria-label","Sort movies");
+      sel.innerHTML = '<option value="rating">Sort: Top rated</option><option value="new">Sort: Newest first</option><option value="old">Sort: Oldest first</option><option value="az">Sort: A–Z</option>';
+      sel.addEventListener("change", function(){ state.sort = sel.value; render(); });
+      genreRow.appendChild(sel);
+
+      function syncChips(){
+        var chips = genreRow.querySelectorAll("[data-genre]");
+        chips.forEach(function(c){ c.setAttribute("aria-pressed", c.dataset.genre===state.genre ? "true":"false"); });
+      }
+
+      // Deep link to a film on its platform. Netflix, Prime Video and ZEE5
+      // open their search for the film's exact title, so the film is the top
+      // result there. JioHotstar is different: its app cannot open web
+      // search links at all (it shows a "Something went wrong" error), so
+      // JioHotstar films link straight to the film's own page on
+      // hotstar.com instead. Title pages checked November 2026.
+      var HOTSTAR_PAGES = {
+        "12thfail": "https://www.hotstar.com/in/movies/12th-fail/1260161273",
+        "stree": "https://www.hotstar.com/in/movies/stree/1000223587",
+        "badhaaiho": "https://www.hotstar.com/in/movies/badhaai-ho/1000120365"
+      };
+      function platUrl(plat, movie){
+        var title = (typeof movie === "string") ? movie : movie.title;
+        var q = encodeURIComponent(title);
+        if (plat === "Netflix") return "https://www.netflix.com/search?q=" + q;
+        if (plat === "Prime Video") return "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=" + q;
+        if (plat === "JioHotstar"){
+          var page = (movie && typeof movie === "object") ? HOTSTAR_PAGES[movie.id] : null;
+          return page || "https://www.hotstar.com/in/movies";
+        }
+        if (plat === "ZEE5") return "https://www.zee5.com/search?q=" + q;
+        return "https://www.google.com/search?q=" + q + "+" + encodeURIComponent(plat);
+      }
+      function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;"); }
+
+      function matches(m){
+        if (state.savedOnly && !state.saved[m.id]) return false;
+        if (state.genre !== "All" && m.genres.indexOf(state.genre) === -1) return false;
+        if (state.query){
+          var q = state.query.toLowerCase();
+          var hay = (m.title+" "+m.cast+" "+m.director+" "+m.genres.join(" ")+" "+m.year).toLowerCase();
+          if (hay.indexOf(q) === -1) return false;
+        }
+        return true;
+      }
+
+      function render(){
+        var list = MOVIES.filter(matches);
+        if (state.sort==="rating") list.sort(function(a,b){ return parseFloat(b.rating)-parseFloat(a.rating); });
+        if (state.sort==="new") list.sort(function(a,b){ return b.year-a.year; });
+        if (state.sort==="old") list.sort(function(a,b){ return a.year-b.year; });
+        if (state.sort==="az") list.sort(function(a,b){ return a.title.localeCompare(b.title); });
+
+        grid.innerHTML = "";
+        list.forEach(function(m){
+          var card = document.createElement("article"); card.className = "card";
+          var saved = !!state.saved[m.id];
+          var firstPlat = m.plats[0];
+          var watchUrl = platUrl(firstPlat, m);
+          card.innerHTML =
+            '<div class="poster"><img src="'+m.poster+'" alt="'+m.title+' movie poster" loading="lazy" />' +
+            '<span class="rating">★ '+m.rating+'</span>' +
+            '<button class="save'+(saved?" on":"")+'" aria-label="Save '+m.title+' to my list" aria-pressed="'+saved+'">'+(saved?"♥":"♡")+'</button>' +
+            '<a class="plat" href="'+watchUrl+'" target="_blank" rel="noopener" aria-label="Watch '+esc(m.title)+' on '+esc(firstPlat)+' (opens in a new tab)">'+esc(m.plats.join(" · "))+' ↗</a></div>' +
+            '<div class="body"><h3>'+m.title+'</h3>' +
+            '<div class="meta">'+m.year+' · '+m.runtime+' · IMDb ★ '+m.rating+'</div>' +
+            '<div class="genres">'+m.genres.join(" · ").toUpperCase()+'</div>' +
+            '<p class="cast">'+m.cast+'</p>' +
+            '<div class="actions"><a class="btn watch" href="'+watchUrl+'" target="_blank" rel="noopener">▶ Watch on '+esc(firstPlat)+'</a>' +
+            '<button class="btn primary" data-act="trailer">▶ Trailer</button>' +
+            '<button class="btn" data-act="details">Details</button></div></div>';
+          card.querySelector(".save").addEventListener("click", function(ev){
+            ev.stopPropagation();
+            state.saved[m.id] = !state.saved[m.id];
+            var n = Object.keys(state.saved).filter(function(k){return state.saved[k];}).length;
+            savedChip.textContent = "♥ My List ("+n+")";
+            render();
+          });
+          card.querySelector('[data-act="trailer"]').addEventListener("click", function(){ openMovie(m, true); });
+          card.querySelector('[data-act="details"]').addEventListener("click", function(){ openMovie(m, false); });
+          grid.appendChild(card);
+        });
+        emptyState.style.display = list.length ? "none" : "block";
+        countLine.textContent = list.length === MOVIES.length
+          ? "Showing all " + list.length + " films — tap “Watch on…” on any film to open it on its app, or Trailer / Details for more."
+          : "Showing " + list.length + " of " + MOVIES.length + " films.";
+      }
+
+      // Search
+      document.getElementById("searchForm").addEventListener("submit", function(e){ e.preventDefault(); document.getElementById("grid").scrollIntoView({behavior:"smooth"}); });
+      document.getElementById("searchInput").addEventListener("input", function(e){ state.query = e.target.value.trim(); render(); });
+
+      // Detail sheet
+      var overlay = document.getElementById("overlay");
+      var videoBox = document.getElementById("videoBox");
+      function openMovie(m, autoplay){
+        document.getElementById("dPoster").src = m.poster;
+        document.getElementById("dPoster").alt = m.title + " movie poster";
+        document.getElementById("dTitle").textContent = m.title;
+        document.getElementById("dMeta").textContent = m.year + " · " + m.runtime + " · Hindi";
+        document.getElementById("dGenres").textContent = m.genres.join(" · ").toUpperCase();
+        document.getElementById("dRating").textContent = "IMDb ★ " + m.rating + " / 10";
+        document.getElementById("dStory").textContent = m.story;
+        document.getElementById("dDirector").textContent = m.director;
+        document.getElementById("dCast").textContent = m.cast;
+        document.getElementById("dWhy").textContent = m.why;
+        var plats = document.getElementById("dPlats"); plats.innerHTML = "";
+        m.plats.forEach(function(p){
+          var a = document.createElement("a"); a.className = "pchip"; a.textContent = p + " ↗";
+          a.href = platUrl(p, m); a.target = "_blank"; a.rel = "noopener";
+          a.setAttribute("aria-label", "Watch " + m.title + " on " + p + " (opens in a new tab)");
+          plats.appendChild(a);
+        });
+        var mainBtn = document.getElementById("dWatchMain");
+        mainBtn.href = platUrl(m.plats[0], m);
+        mainBtn.textContent = "▶ Watch on " + m.plats[0];
+        document.getElementById("ytLink").href = "https://www.youtube.com/watch?v=" + m.yt;
+        videoBox.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + m.yt + (autoplay ? "?autoplay=1&rel=0" : "?rel=0") + '" title="' + m.title + ' official trailer" allow="accelerometer; autoplay; encrypted-media; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>';
+        overlay.classList.add("open");
+        document.body.style.overflow = "hidden";
+      }
+      function closeMovie(){ overlay.classList.remove("open"); videoBox.innerHTML = ""; document.body.style.overflow = ""; }
+      document.getElementById("closeBtn").addEventListener("click", closeMovie);
+      overlay.addEventListener("click", function(e){ if (e.target === overlay) closeMovie(); });
+      document.addEventListener("keydown", function(e){ if (e.key === "Escape") closeMovie(); });
+
+      render();
+    </script>
+  </body>
+</html>
